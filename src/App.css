@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900");
+body {
+  margin: 0;
+  background: #f4f4f4;
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Inter;
+}
+.card_ul_container {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.checkbox_container > label {
+  font-size: 18px;
+}
+.checkbox_container input {
+  width: 16px;
+  height: 16px;
+}
+.checkbox_container input:hover {
+  cursor: pointer;
+}

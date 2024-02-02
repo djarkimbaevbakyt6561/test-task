@@ -1,0 +1,74 @@
+p {
+  margin: 0;
+}
+.card_item_container {
+  width: 250px;
+  height: 410px;
+  background: rgb(60, 62, 68);
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-family: Inter;
+  color: white;
+}
+.card_item_container:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.card_item_image {
+  width: 250px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  user-select: none;
+}
+.card_item_name_container > p {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+.card_item_status_container > p {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.card_item_status_container > p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.card_item_status_container > p::before {
+  background-color: rgb(85, 204, 68);
+}
+
+.card_item_status_container > p[data-status="Dead"]::before {
+  background-color: rgb(255, 0, 0);
+}
+.card_item_status_container > p[data-status="unknown"]::before {
+  background-color: rgb(158, 158, 158);
+}
+.card_item_status_container > p .card_item_first-letter {
+  text-transform: uppercase;
+}
+.card_item_location_title {
+  margin-top: 10px;
+  color: rgb(158, 158, 158);
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.card_item_button_container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  gap: 15px;
+}
+.card_item_button_container > svg:hover {
+  cursor: pointer;
+}
